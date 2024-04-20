@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('https://www.click4vector.com/public/uploads/preview/jute-texture-photo-stock-background-hd-wallpaper-11671102561t7i5hekxm7.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.welcome-container {
+    position: absolute;
+
+    transform: translateY(-180%);
+   
+    text-align: center;
+    transition: background-color 0.7s ease, opacity 2s ease, transform 2s ease;
+}
+.welcome-container.fade-in { opacity: 1; /* Visible on hover */
+    transform: translateY(200%); /* Translate button slightly towards the top */
+}
+
+.welcome-text {
+    font-size: 48px;
+    color: #4d3117; /* Dark grey text */
+}
+
+.start-button {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 18px;
+    border: none;
+    background-color: rgba(9, 10, 10, 0.75); /* Green button with transparency */
+    color: #fff; /* White text */
+    border-radius: 30px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.7s ease, opacity 2s ease, transform 2s ease; /* Smooth transition for background color, opacity, and transform */
+    text-decoration: none;
+    outline: none;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(150%); /* Initial translation */
+}
+
+/* Fade-in effect */
+.start-button.fade-in {
+    opacity: 1; /* Visible on hover */
+    transform: translateY(-150%); /* Translate button slightly towards the top */
+}
+
+
+.start-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
